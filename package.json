@@ -25,6 +25,7 @@
     "start": "node ./server.js",
     "build": "webpack -w",
     "build:prod": "rm -rf dist && NODE_ENV=prod webpack -p",
+    "heroku-postbuild": "npm run build:prod",
     "test": "mocha test/unit/specs/*.js* --require test/unit/babelSetup.js --require test/unit/setup.js"
   },
   "author": "rafaelaudy <rafael.audy@gmail.com>",
