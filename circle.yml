@@ -1,0 +1,9 @@
+test:
+  post:
+    - npm run build:prod
+
+deployment:
+  prod:
+    branch: master
+    heroku:
+      appname: my-trips-oscars

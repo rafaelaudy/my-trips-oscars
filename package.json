@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "dependencies": {},
+  "main": "./server.js",
   "devDependencies": {
     "babel-core": "^6.21.0",
     "babel-loader": "^6.2.10",
@@ -10,14 +11,16 @@
     "babel-preset-react": "^6.16.0",
     "babel-preset-stage-0": "^6.16.0",
     "chai": "^3.5.0",
+    "express": "^4.14.0",
     "html-webpack-plugin": "^2.24.1",
+    "http-server": "^0.9.0",
     "mocha": "^3.2.0",
     "webpack": "^1.14.0",
     "webpack-merge": "^1.1.1"
   },
   "scripts": {
-    "start": "webpack -w",
-    "build": "rm -rf dist && NODE_ENV=prod webpack -p",
+    "build": "webpack -w",
+    "build:prod": "rm -rf dist && NODE_ENV=prod webpack -p",
     "test": "mocha test/unit/specs/*.js* --require test/unit/babelSetup.js --require test/unit/setup.js"
   },
   "author": "rafaelaudy <rafael.audy@gmail.com>",
