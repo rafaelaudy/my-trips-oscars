@@ -1,7 +1,7 @@
 {
   "name": "my-trips-oscars",
   "version": "1.0.0",
-  "description": "",
+  "description": "Pet project to register and remember the best moments of your trips",
   "dependencies": {},
   "main": "./server.js",
   "devDependencies": {
