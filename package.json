@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Pet project to register and remember the best moments of your trips",
   "dependencies": {},
+  "engines": {
+    "node": "7.2.1"
+  },
   "main": "./server.js",
   "devDependencies": {
     "babel-core": "^6.21.0",
@@ -19,6 +22,7 @@
     "webpack-merge": "^1.1.1"
   },
   "scripts": {
+    "start": "node ./server.js",
     "build": "webpack -w",
     "build:prod": "rm -rf dist && NODE_ENV=prod webpack -p",
     "test": "mocha test/unit/specs/*.js* --require test/unit/babelSetup.js --require test/unit/setup.js"
