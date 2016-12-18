@@ -1,3 +1,3 @@
 require('babel-core/register')({
-    only: [/src/, /test\/unit/]
+    only: [/src/, /tests\/unit/]
 });

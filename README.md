@@ -4,3 +4,10 @@
 Pet project to register and remember the best moments of your trips
 
 To run just do the usual, install packages, run `npm run build` and run `npm start`.
+
+# Next steps
+Just to remember where I stoped :p
+
+* Refactor folder structure
+* Implement source maps
+* Continue with the static layout
