@@ -1,3 +1,4 @@
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
@@ -12,21 +13,21 @@ module.exports = {
 
     resolve: {
         extensions: ['', '.webpack.js', '.js', '.jsx'],
-        root: [
-			'./src'
-        ]
+        root: [ './src' ]
     },
 
     plugins: [
         new HtmlWebpackPlugin({
             filename: 'index.html',
             template: './src/index.html'
-        })
+        }),
+        new ExtractTextPlugin('[hash]/bundle.min.css')
     ],
 
     module: {
         loaders: [
-            { test: /\.jsx?$/, exclude: ['node_modules'], loader: 'babel-loader' }
+            { test: /\.jsx?$/, exclude: ['node_modules'], loader: 'babel-loader' },
+            { test: /\.scss$/, loader: ExtractTextPlugin.extract('style', 'css?sourceMap!sass?sourceMap') }
         ]
     },
 
