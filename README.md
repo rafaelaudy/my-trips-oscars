@@ -8,6 +8,4 @@ To run just do the usual, install packages, run `npm run build` and run `npm sta
 # Next steps
 Just to remember where I stoped :p
 
-* Refactor folder structure
-* Implement source maps
 * Continue with the static layout

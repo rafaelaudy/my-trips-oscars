@@ -5,7 +5,7 @@ module.exports = {
     devtool: 'source-map',
 
     entry: [
-        './src/index.jsx'
+        './src/js/index.jsx'
     ],
 
     output: {
@@ -29,7 +29,8 @@ module.exports = {
     module: {
         loaders: [
             { test: /\.jsx?$/, exclude: /node_modules/, loader: 'babel-loader' },
-            { test: /\.scss$/, loader: ExtractTextPlugin.extract('style', 'css?sourceMap!sass?sourceMap') }
+            { test: /\.scss$/, loader: ExtractTextPlugin.extract('style', 'css?sourceMap!sass?sourceMap') },
+            { test: /\.jpg$/, loader: "file-loader" }
         ]
     },
 
