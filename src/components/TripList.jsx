@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './viewTrips.scss';
+import './tripList.scss';
 
 import TripCard from './TripCard';
 
