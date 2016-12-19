@@ -9,3 +9,5 @@ To run just do the usual, install packages, run `npm run build` and run `npm sta
 Just to remember where I stoped :p
 
 * Continue with the static layout
+* Add lint
+* Add monitoring
