@@ -10,7 +10,7 @@ module.exports = {
 
     output: {
         path: './dist',
-        filename: '[hash]/bundle.min.js'
+        filename: '[hash]bundle.min.js'
     },
 
     resolve: {
@@ -23,7 +23,7 @@ module.exports = {
             filename: 'index.html',
             template: './src/index.html'
         }),
-        new ExtractTextPlugin('[hash]/bundle.min.css')
+        new ExtractTextPlugin('[hash]bundle.min.css')
     ],
 
     module: {
