@@ -5,6 +5,8 @@ Pet project to register and remember the best moments of your trips
 
 To run just do the usual, install packages, run `npm run build` and run `npm start`.
 
+The app is deployed here: https://my-trips-oscars.herokuapp.com/
+
 # Next steps
 Just to remember where I stoped :p
 
