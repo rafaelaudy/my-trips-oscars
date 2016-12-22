@@ -2,8 +2,8 @@ import React from 'react';
 
 import './tripCard.scss';
 
-export default (props) => {
-    return (
+export const TripCard = () => {
+	return (
 		<div className="trip-card-square mdl-card mdl-shadow--4dp">
 			<div className="mdl-card__title mdl-card--expand">
 				<h2 className="mdl-card__title-text">Veneza</h2>
@@ -17,5 +17,5 @@ export default (props) => {
 				</a>
 			</div>
 		</div>
-    );
+	);
 };

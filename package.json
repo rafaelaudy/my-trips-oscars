@@ -25,6 +25,9 @@
   "main": "./server.js",
   "devDependencies": {
     "chai": "^3.5.0",
+    "eslint": "^3.12.2",
+    "eslint-loader": "^1.6.1",
+    "eslint-plugin-react": "^6.8.0",
     "mocha": "^3.2.0"
   },
   "scripts": {
@@ -32,7 +35,8 @@
     "build": "webpack -w",
     "build:prod": "rm -rf dist && NODE_ENV=prod webpack -p",
     "heroku-postbuild": "npm run build:prod",
-    "test": "mocha tests/unit/specs/*.js* --require tests/unit/babelSetup.js --require tests/unit/setup.js"
+    "test": "mocha tests/unit/specs/*.js* --require tests/unit/babelSetup.js --require tests/unit/setup.js",
+    "lint": "eslint **/* --ext .jsx,.js --ignore-path .gitignore --fix"
   },
   "author": "rafaelaudy <rafael.audy@gmail.com>",
   "license": "ISC"

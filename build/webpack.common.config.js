@@ -2,40 +2,43 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-    devtool: 'source-map',
+	devtool: 'source-map',
 
-    entry: [
-        './src/js/index.jsx'
-    ],
+	entry: [
+		'./src/js/index.jsx'
+	],
 
-    output: {
-        path: './dist',
-        filename: '[hash]bundle.min.js'
-    },
+	output: {
+		path: './dist',
+		filename: '[hash]bundle.min.js'
+	},
 
-    resolve: {
-        extensions: ['', '.webpack.js', '.js', '.jsx'],
-        root: [ './src' ]
-    },
+	resolve: {
+		extensions: ['', '.webpack.js', '.js', '.jsx'],
+		root: [ './src' ]
+	},
 
-    plugins: [
-        new HtmlWebpackPlugin({
-            filename: 'index.html',
-            template: './src/index.html'
-        }),
-        new ExtractTextPlugin('[hash]bundle.min.css')
-    ],
+	plugins: [
+		new HtmlWebpackPlugin({
+			filename: 'index.html',
+			template: './src/index.html'
+		}),
+		new ExtractTextPlugin('[hash]bundle.min.css')
+	],
 
-    module: {
-        loaders: [
+	module: {
+		loaders: [
             { test: /\.jsx?$/, exclude: /node_modules/, loader: 'babel-loader' },
             { test: /\.scss$/, loader: ExtractTextPlugin.extract('style', 'css?sourceMap!sass?sourceMap') },
-            { test: /\.jpg$/, loader: "file-loader" }
-        ]
-    },
+            { test: /\.jpg$/, loader: 'file-loader' },
+		],
+		preLoaders: [
+            { test: /\.jsx?$/, loader: 'eslint-loader', exclude: /node_modules/ }
+		]
+	},
 
-    externals: {
-        'react': 'React',
-        'react-dom': 'ReactDOM'
-    }
+	externals: {
+		'react': 'React',
+		'react-dom': 'ReactDOM'
+	}
 };
