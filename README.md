@@ -11,5 +11,4 @@ The app is deployed here: https://my-trips-oscars.herokuapp.com/
 Just to remember where I stoped :p
 
 * Continue with the static layout
-* Add lint
 * Add monitoring
