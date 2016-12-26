@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const Header = () => {
+const Header = () => {
 	return (
 		<header className="mdl-layout__header">
 			<div className="mdl-layout__header-row">
@@ -12,3 +12,5 @@ export const Header = () => {
 		</header>
 	);
 };
+
+export default Header;

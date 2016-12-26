@@ -4,7 +4,7 @@ import './tripList.scss';
 
 import TripCard from './TripCard';
 
-export const Triplist = () => {
+const Triplist = () => {
 	return (
         <div className="mdl-grid tripList">
             <TripCard />
@@ -13,3 +13,5 @@ export const Triplist = () => {
         </div>
 	);
 };
+
+export default Triplist;

@@ -4,10 +4,12 @@ import './content.scss';
 
 import TripList from './TripList';
 
-export const Content = () => {
+const Content = () => {
 	return (
         <main className="mdl-layout__content content">
             <TripList />
         </main>
 	);
 };
+
+export default Content;
