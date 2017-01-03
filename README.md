@@ -10,5 +10,7 @@ The app is deployed here: https://my-trips-oscars.herokuapp.com/
 # Next steps
 Just to remember where I stoped :p
 
+* Add redux
+* Add localization support
 * Continue with the static layout
 * Add monitoring
