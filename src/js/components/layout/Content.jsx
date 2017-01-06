@@ -2,7 +2,7 @@ import React from 'react';
 
 import './content.scss';
 
-import TripList from './TripList';
+import TripList from '../viewTrips/TripList';
 
 const Content = () => {
 	return (
