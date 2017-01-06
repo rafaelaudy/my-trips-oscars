@@ -11,6 +11,11 @@ The app is deployed here: https://my-trips-oscars.herokuapp.com/
 Just to remember where I stoped :p
 
 * Add redux
+* Login with facebook or google
+* Connect with firebase
+* Load data from user
+* Add, edit trips
+* View list of basic questions to edit
 * Add localization support
 * Continue with the static layout
 * Add monitoring
