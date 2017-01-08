@@ -4,18 +4,27 @@ import './tripCard.scss';
 
 import TripCardActions from './TripCardActions';
 
-const TripCard = () => {
+const TripCard = (props) => {
+	const {title, description, index} = props;
+
 	return (
 		<div className="trip-card-square mdl-card mdl-shadow--4dp">
 			<div className="trip-card-title mdl-card__title mdl-card--expand">
-				<h2 className="mdl-card__title-text">Veneza</h2>
+				<h2 className="mdl-card__title-text">
+					{title}
+				</h2>
 			</div>
 			<div className="mdl-card__supporting-text">
-				Gondolas, pombas, multidāo e pasta (rica pasta).
+				{description}
 			</div>
-			<TripCardActions />
+			<TripCardActions index={index}/>			
 		</div>
 	);
+};
+
+TripCard.propTypes = {
+	title: React.PropTypes.string.isRequired,
+	description: React.PropTypes.string.isRequired
 };
 
 export default TripCard;
