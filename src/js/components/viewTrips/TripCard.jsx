@@ -2,7 +2,7 @@ import React from 'react';
 
 import './tripCard.scss';
 
-import TripCardActions from './TripCardActions';
+import TripCardActions from './TripCardActionsContainer';
 
 const TripCard = (props) => {
 	const {title, description, index} = props;

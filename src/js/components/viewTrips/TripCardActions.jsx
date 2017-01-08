@@ -1,5 +1,4 @@
 import React from 'react';
-import { connect } from 'react-redux';
 
 import './tripCardActions.scss';
 
@@ -35,13 +34,4 @@ TripCardActions.propTypes = {
 	index: React.PropTypes.number.isRequired
 };
 
-const mapDispatchToProps = (dispatch) => ({
-	remove: (index) => {
-		dispatch({
-			type: 'DELETE',
-			payload: index
-		});
-	}
-});
-
-export default connect(undefined, mapDispatchToProps)(TripCardActions);
+export default TripCardActions;

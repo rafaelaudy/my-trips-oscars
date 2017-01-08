@@ -1,5 +1,4 @@
 import React from 'react';
-import { connect } from 'react-redux';
 
 import './tripList.scss';
 
@@ -27,9 +26,4 @@ Triplist.propTypes = {
 	trips: React.PropTypes.array.isRequired
 };
 
-const mapStateToProps = (state) => {
-	const { trips } = state;
-	return { trips };
-};
-
-export default connect(mapStateToProps)(Triplist);
+export default Triplist;

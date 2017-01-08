@@ -10,7 +10,6 @@ The app is deployed here: https://my-trips-oscars.herokuapp.com/
 # Next steps
 Just to remember where I stoped :p
 
-* Add redux
 * Login with facebook or google
 * Connect with firebase
 * Load data from user
