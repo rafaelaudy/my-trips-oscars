@@ -10,8 +10,8 @@ const Triplist = (props) => {
 
 	const tripCards = [];
 	trips.forEach(function(trip, index) {
-		const { title, description } = trip;
-		tripCards.push(<TripCard key={index} index={index} title={title} description={description}/>);
+		const { title, description, picture } = trip;
+		tripCards.push(<TripCard key={index} index={index} title={title} description={description} picture={picture}/>);
 	});
 
 	return (
