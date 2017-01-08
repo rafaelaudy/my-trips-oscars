@@ -23,6 +23,7 @@ const TripCard = (props) => {
 };
 
 TripCard.propTypes = {
+	index: React.PropTypes.number.isRequired,
 	title: React.PropTypes.string.isRequired,
 	description: React.PropTypes.string.isRequired
 };

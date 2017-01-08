@@ -7,13 +7,13 @@ const TripCardActions = (props) => {
 	const { remove, index } = props;
 	const onEdit = () => {
 		alert('edit');
-	}
+	};
 	const onShare = () => {
 		alert('share');
-	}
+	};
 	const onRemove = () => {
 		remove(index);
-	}
+	};
 
 	return (
 		<div className="trip-card-actions mdl-card__actions mdl-card--border">

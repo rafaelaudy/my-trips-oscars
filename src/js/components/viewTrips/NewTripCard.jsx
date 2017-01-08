@@ -1,13 +1,12 @@
 import React from 'react';
-import { connect } from 'react-redux';
 
 import './tripCard.scss';
 import './newTripCard.scss';
 
-const NewTripCard = (props) => {
+const NewTripCard = () => {
 	const add = () => {
 		alert('open new page');
-	}
+	};
 
 	return (
 		<div className="trip-card-square mdl-card mdl-shadow--4dp">

@@ -14,17 +14,17 @@ const defaultState = [
 		description: 'Gondolas, pombas, multidāo e pasta (rica pasta).',
 		picture: 'https://goo.gl/photos/D9wTDWgPS8tSAPNK9'
 	}
-]
+];
 
 export default (state = defaultState, action) => {
 	switch (action.type) {
-		case 'ADD': 
-			return [...state, action.payload];
-		case 'DELETE':
-			return [...state.slice(0, action.payload), ...state.slice(action.payload +1) ];
-		case 'EDIT':
-			return [...state.slice(0, action.payload.index), action.payload.trip ,...state.slice(action.payload.index +1) ];
-		default:
-            return state;
+	case 'ADD': 
+		return [...state, action.payload];
+	case 'DELETE':
+		return [...state.slice(0, action.payload), ...state.slice(action.payload +1) ];
+	case 'EDIT':
+		return [...state.slice(0, action.payload.index), action.payload.trip ,...state.slice(action.payload.index +1) ];
+	default:
+		return state;
 	}
 };
