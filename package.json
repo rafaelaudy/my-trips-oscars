@@ -19,7 +19,10 @@
     "sass-loader": "^4.1.0",
     "style-loader": "^0.13.1",
     "webpack": "^1.14.0",
-    "webpack-merge": "^1.1.1"
+    "webpack-merge": "^1.1.1",
+    "eslint": "^3.12.2",
+    "eslint-loader": "^1.6.1",
+    "eslint-plugin-react": "^6.8.0"
   },
   "engines": {
     "node": "7.2.1"
@@ -27,9 +30,6 @@
   "main": "./server.js",
   "devDependencies": {
     "chai": "^3.5.0",
-    "eslint": "^3.12.2",
-    "eslint-loader": "^1.6.1",
-    "eslint-plugin-react": "^6.8.0",
     "mocha": "^3.2.0"
   },
   "scripts": {
