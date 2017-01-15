@@ -7,6 +7,14 @@ To run just do the usual, install packages, run `npm run build` and run `npm sta
 
 The app is deployed here: https://my-trips-oscars.herokuapp.com/
 
+# Cool improvements
+Stuff that I learn about that I would like to test it out
+
+* Add immutable.js
+* Use pure functions instead of class inheritance for React components
+* Use webpack profiler
+* Conside Scaphold instead of firebase to use GraphQL
+
 # Next steps
 Just to remember where I stoped :p
 
