@@ -8,7 +8,7 @@ To run just do the usual, install packages, run `npm run build` and run `npm sta
 The app is deployed here: https://my-trips-oscars.herokuapp.com/
 
 # Cool improvements
-Stuff that I learn about that I would like to test it out
+Cool tech I would like to test
 
 * Add immutable.js
 * Use pure functions instead of class inheritance for React components
