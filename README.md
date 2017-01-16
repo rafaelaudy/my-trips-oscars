@@ -12,7 +12,7 @@ Cool tech I would like to test
 
 * Add immutable.js
 * Use pure functions instead of class inheritance for React components
-* Use webpack profiler
+* Use webpack profiler and use webpack-dev-server
 * Conside Scaphold instead of firebase to use GraphQL
 
 # Next steps
